@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | FURNIT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- JQUERY LINK -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body class="bg-slate-50">
+  <!-- NAVIGATOIN BAR -->
+
+  <nav class="fixed top-0 w-full z-10 p-4 shadow-sm lg:bg-white sm:bg-white bg-white">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="text-white font-bold">
+        <div class="text-xl font-extrabold text-[#072541]">FUR<span class="font-sans text-[#ED7D31]">NIT</span></div>
+      </div>
+
+      <!-- Mobile Menu Button (visible on small screens) -->
+      <div id="mobile-menu-btn" class="lg:hidden p-4">
+        <svg class="h-6 w-6 text-slate-950 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </div>
+
+      <!-- Navigation Links (Hidden on Small Screens) -->
+      <div id="nav-links" class="hidden lg:flex justify-center items-center space-x-12 p-4">
+        <a href="#" class="font-medium hover:bg-[#ED7D31] hover:text-white p-1 text-[#072541] rounded">Home</a>
+        <a href="#" class="font-medium hover:bg-[#ED7D31] hover:text-white p-1 text-[#072541] rounded">Products</a>
+        <a href="#" class="font-medium hover:bg-[#ED7D31] hover:text-white p-1 text-[#072541] rounded">Services</a>
+        <a href="#" class="font-medium hover:bg-[#ED7D31] hover:text-white p-1 text-[#072541] rounded">Contact</a>
+      </div>
+
+      <div id="nav-links" class="hidden lg:flex justify-between items-center space-x-8 text-gray-800 p-4">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <button class="bg-[#ED7D31] rounded-sm px-3 p-1 font-bold text-white"><a href="">Login</a></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu (hidden by default) -->
+  <div id="mobile-menu" class="lg:hidden hidden pt-16 p-4 shadow-sm">
+    <a href="#" class="block font-bold text-[#072541] py-2 px-4 hover:bg-gray-700">Home</a>
+    <a href="#" class="block font-bold text-[#072541] py-2 px-4 hover:bg-gray-700">Products</a>
+    <a href="#" class="block font-bold text-[#072541] py-2 px-4 hover:bg-gray-700">Services</a>
+    <a href="#" class="block font-bold text-[#072541] py-2 px-4 hover:bg-gray-700">Contact</a>
+    <br>
+    <div class="flex justify-start items-center">
+      <i class="fa-solid fa-magnifying-glass mx-3"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
+      <button class="bg-[#ED7D31] rounded-sm px-3 p-1 font-bold text-white mx-3"><a href="">Login</a></button>
+    </div>
+  </div>
+
+  <!-- HERO-SECTION HERE -->
+  <div class="container flex mx-auto mt-40 p-4">
+    <div class=" md:flex items-center justify-center">
+      <div class="lg:w-1/2 md:w-full px-4 ">
+        <h3 class="text-[1rem] font-medium p-1 sm:text-2xl">Get Up To <span
+            class=" text-1xl bg-[#F9B572] w-11/12 rounded-2xl px-5 p-1">25% Discount</span> For This Winter <span
+            class="text-2xl font-bold text-[#F9B572]">!</span></h3>
+        <br>
+        <h1 class="lg:text-6xl font-bold my-10 text-[#072541] md:text-4xl sm:text-5xl">Select Best Furniture For Your
+          Family</h1>
+        <p class="text-lg font-medium text-justify leading-7 text-[#072541] md:w-11/12 mt-8">
+          Discover Elegance and Comfort: Unveiling a World of Exquisite Furniture Collections for Your Home.
+          Crafting Style and Functionality: Elevate Your Living Spaces with Our Thoughtfully Designed Furniture
+          Selections.</p>
+        <br>
+        <button
+          class="bg-gradient-to-t from-orange-500 to-orange-400 hover:from-orange-500 hover:to-orange-500 rounded-xs px-8 p-2 font-bold text-white"><a
+            href="">Shop Now</a></button>
+      </div>
+
+      <!-- Image (Right Side) -->
+      <div class="lg:w-1/2 px-4 md:w-full md:mt-0 sm:mt-10">
+        <img src="media/furniture.jpg" alt="Hero Image" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURE PRODUCT HERE -->
+  <div class="container mx-auto p-4 pt-36">
+    <h1 class="text-start text-3xl font-bold text-[#072541]">Featu<span class="text-[#ED7D31]">re Pr</span>oducts
+      <br><span class="text-sm font-medium">
+        <p>Discover our cutting-edge products, blending innovation with style.</p>
+      </span>
+    </h1>
+    <br><br><br>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 cursor-pointer">
+      <div class="card w-full h-48 bg-slate-200 shadow-slate-400 rounded">
+        <img src="media/88.png"
+          class="flex items-center justify-center m-auto pt-4 hover:scale-105 ease-linear duration-300" alt="">
+      </div>
+
+      <div class="card w-full h-48 bg-slate-200 shadow-slate-400 rounded">
+        <img src="media/feature-.jpg" class="flex items-center justify-center m-auto pt-4" alt="">
+      </div>
+      <div class="card w-full h-48 bg-slate-200 shadow-slate-400 rounded">
+        <img src="media/blue-chair.png"
+          class="flex items-center justify-center m-auto pt-4 hover:scale-110 ease-linear duration-300" alt="">
+      </div>
+      <div class="card w-full h-48 bg-slate-200 shadow-slate-400 rounded">
+        <img src="media/feature-2.png"
+          class="flex items-center justify-center m-auto hover:scale-110 ease-linear duration-300 " alt="">
+      </div>
+      <div class="card w-full h-48 bg-slate-200 shadow-slate-400 rounded">
+        <img src="media/chair-5.png" width="200px"
+          class="flex items-center justify-center m-auto hover:scale-110 ease-linear duration-300 " alt="">
+      </div>
+    </div>
+  </div>
+  <!-- NEW ARRIVAL -->
+  <div class="container mx-auto p-4 pt-28 ">
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-between">
+      <div class="sm:gap-y-5">
+        <h1 class="text-start text-3xl font-bold text-[#072541]">New<span class="text-[#ED7D31]"> Arrivals </h1>
+      </div>
+      <div class="text-[#898c8f] text-sm font-bold flex items-center lg:justify-end">
+        <button
+          class="mx-1 bg-[#e2e8f0] active:bg-slate-700 active:text-white cursor-pointer text rounded-sm px-2 py-1">ALL</button>
+        <button
+          class="mx-1 bg-[#e2e8f0] active:bg-slate-700 active:text-white cursor-pointer text rounded-sm px-2 py-1">NEW</button>
+        <button
+          class="mx-1 bg-[#e2e8f0] active:bg-slate-700 active:text-white cursor-pointer text rounded-sm px-2 py-1">BEST
+          SELLER</button>
+        <button
+          class="mx-1 bg-[#e2e8f0] active:bg-slate-700 active:text-white cursor-pointer text rounded-sm px-2 py-1">SPECIALS</button>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-10 gap-6">
+      <div class="images shadow-md rounded-lg relative">
+        <div class=" ">
+          <!-- Background Image -->
+          <img class="w-full h-full object-cover" src="media/bed-2.jpg" width="260px" alt="Card Image">
+
+          <!-- Overlay with RGBA color -->
+          <div class="absolute inset-0 bg-[#072541] bg-opacity-90"></div>
+
+          <!-- Card Content -->
+          <div class="absolute inset-0 flex items-center justify-center">
+
+            <p class="text-white m-10 text-justify"> <i class="fa-solid fa-bullhorn fa-fade text-5xl"></i> <br><br>
+              Discover the latest in home aesthetics with our new arrival furniture, seamlessly blending contemporary
+              designs and functional elegance to elevate your living spaces.</p>
+          </div>
+        </div>
+      </div>
+      <!-- ARRIVAL CARD HERE -->
+      <div class="images shadow-md">
+        <img src="media/arrival-1.png" alt="">
+        <div class="flex items-center justify-around p-2">
+          <details class=" p-2" id="click-1">
+            <summary class="font-semibold">View Details</summary>
+            <p class="w-full p-1 text-justify font-normal">A reading table provides a dedicated space for books and
+              study materials,
+              fostering focus, organization, and a comfortable environment for learning.</p>
+          </details>
+          <div class="shadow-lg p-1 text-1xl font-medium">
+            <span>3000 Tk</span>
+          </div>
+        </div>
+      </div>
+      <div class="images shadow-md">
+        <img src="media/arrival-2.png" alt="">
+        <div class="flex items-center justify-around p-2">
+          <details class=" p-2" id="click-1">
+            <p class="w-full p-1 text-justify font-normal">
+              <summary class="font-semibold">View Details</summary>
+            <p class="w-full p-1 text-justify font-normal">
+              Fabric-covered container for organizing and storing clothing, maintaining order and accessibility.</p>
+          </details>
+          <div class="shadow-lg p-1 text-1xl font-medium">
+            <span>3500 Tk</span>
+          </div>
+        </div>
+      </div>
+      <div class="images shadow-md">
+        <img src="media/arrival-4.png" alt="">
+        <div class="flex items-center justify-around p-2">
+          <details class=" p-2" id="click-1">
+            <summary class="font-semibold">View Details</summary>
+            <p class="w-full p-1 text-justify font-normal">
+              Elegant, functional, space-saving, decorative, organized, versatile, stylish, illuminated, contemporary,
+              focal point.</p>
+          </details>
+          <div class="shadow-lg p-1 text-1xl font-medium">
+            <span>15000 Tk</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- OUR TRANDING PRODUCTS -->
+  <div class="container mx-auto p-4 pt-28">
+    <h1 class="text-start text-3xl font-bold text-[#072541]">Our Trand<span class="text-[#ED7D31]">ing Products</span>
+    </h1>
+    <br><span class="text-sm text-start font-bold text-[#072541]">
+      <p class="font-medium text-sm">Explore our trending products, featuring quality, style, and innovation.</p>
+    </span>
+    <br><br><br>
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-11">
+
+      <div class="card w-full">
+        <img src="media/stool-1.png" class="hover:scale-110 hover:ease-linear duration-300 my-6 bg-[#e2e8f0] rounded-sm"
+          alt="">
+        <div class="flex items-center">
+          <div class="title block">
+            <div class="price">
+              <span class="font-bold text-1xl text-[#072541]">Elegant Stool</span>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-regular fa-star-half-stroke" style="color: #FFB000;"></i>
+            </div>
+          </div>
+          <div class="price ms-28">
+            <span class="font-bold text-1xl text-[#072541]">1600 Tk</span>
+            <div class="over">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-heart ms-5 active:bg-gray-900 rounded-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card w-full">
+        <img src="media/chair-1.png"
+          class=" hover:scale-110 hover:ease-linear duration-300  my-6 bg-[#e2e8f0] rounded-sm" alt="">
+        <div class="flex items-center">
+          <div class="title block">
+            <div class="price">
+              <span class="font-bold text-1xl text-[#072541]">Elegant Sofa</span>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-regular fa-star-half-stroke" style="color: #FFB000;"></i>
+            </div>
+          </div>
+          <div class="price ms-28">
+            <span class="font-bold text-1xl text-[#072541]">3000 Tk</span>
+            <div class="over">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-heart ms-5 active:bg-gray-900 rounded-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full ">
+        <img src="media/small-1.png"
+          class="hover:scale-110 hover:ease-linear duration-300  my-6 bg-[#e2e8f0] rounded-sm" alt="">
+        <div class="flex items-center">
+          <div class="title block">
+            <div class="price">
+              <span class="font-bold text-1xl text-[#072541]">Sofa Set</span>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-regular fa-star-half-stroke" style="color: #FFB000;"></i>
+            </div>
+          </div>
+          <div class="price ms-28">
+            <span class="font-bold text-1xl text-[#072541]">5500 Tk</span>
+            <div class="over">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-heart ms-5 active:bg-gray-900 rounded-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full ">
+        <img src="media/small-2.png"
+          class="hover:scale-110 hover:ease-linear duration-300  my-6 bg-[#e2e8f0] rounded-sm" alt="">
+        <div class="flex items-center">
+          <div class="title block">
+            <div class="price">
+              <span class="font-bold text-1xl text-[#072541]">Double Sofa</span>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-regular fa-star-half-stroke" style="color: #FFB000;"></i>
+            </div>
+          </div>
+          <div class="price ms-28">
+            <span class="font-bold text-1xl text-[#072541]">4000 Tk</span>
+            <div class="over">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-heart ms-5 active:bg-gray-900 rounded-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full ">
+        <img src="media/chair-5.png"
+          class="hover:scale-110 hover:ease-linear duration-300  my-6 bg-[#e2e8f0] rounded-sm" alt="">
+        <div class="flex items-center">
+          <div class="title block">
+            <div class="price">
+              <span class="font-bold text-1xl text-[#072541]">Sea Beach Chair</span>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-regular fa-star-half-stroke" style="color: #FFB000;"></i>
+            </div>
+          </div>
+          <div class="price ms-28">
+            <span class="font-bold text-1xl text-[#072541]">2000 Tk</span>
+            <div class="over">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-heart ms-5 active:bg-gray-900 rounded-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full ">
+        <img src="media/table-1.png"
+          class="hover:scale-110 hover:ease-linear duration-300 hover:border-l-pink-600 bg-[#e2e8f0]  my-6 rounded-sm"
+          alt="">
+        <div class="flex items-center">
+          <div class="title block">
+            <div class="price">
+              <span class="font-bold text-1xl text-[#072541]">Round Table</span>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-regular fa-star-half-stroke" style="color: #FFB000;"></i>
+            </div>
+          </div>
+          <div class="price ms-28">
+            <span class="font-bold text-1xl text-[#072541]">6000 Tk</span>
+            <div class="over">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-heart ms-5 active:bg-gray-900 rounded-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-ful items-center justify-center">
+        <img src="media/small-3.png"
+          class="hover:scale-110 hover:ease-linear duration-300  my-6 bg-[#e2e8f0] rounded-sm" alt="">
+        <div class="flex items-center">
+          <div class="title block">
+            <div class="price">
+              <span class="font-bold text-1xl text-[#072541]">Single Sofa</span>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-regular fa-star-half-stroke" style="color: #FFB000;"></i>
+            </div>
+          </div>
+          <div class="price ms-28">
+            <span class="font-bold text-1xl text-[#072541]">2500 Tk</span>
+            <div class="over">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-heart ms-5 active:bg-gray-900 rounded-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full ">
+        <img src="media/small-4.png"
+          class="hover:scale-110 hover:ease-linear duration-300 my-6  bg-[#e2e8f0] rounded-sm" alt="">
+        <div class="flex items-center">
+          <div class="title block">
+            <div class="price">
+              <span class="font-bold text-1xl text-[#072541]">Double Sofa</span>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-solid fa-star" style="color: #FFB000;"></i>
+              <i class="fa-regular fa-star-half-stroke" style="color: #FFB000;"></i>
+            </div>
+          </div>
+          <div class="price ms-28">
+            <span class="font-bold text-1xl text-[#072541]">6200 Tk</span>
+            <div class="over">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-heart ms-5 active:bg-gray-900 rounded-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- BLOG SECTION START -->
+  <div class="container mx-auto p-4 pt-28">
+    <h1 class="text-start text-3xl font-bold text-[#072541]">Recently <span class="text-[#ED7D31]">Posted Blog</span>
+    </h1>
+    <span class="text-sm text-start font-bold text-[#072541]">
+      <p class="font-medium text-sm">The recently posted blog explores innovative solutions for sustainable living.</p>
+    </span>
+    <br>
+    <br>
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4 ">
+      <!-- card 1 -->
+      <div class="flex items-center justify-center">
+        <div class="relative  h-64 overflow-hidden shadow-2xl w-full p-4">
+          <img class="w-full h-full object-cover rounded" src="media/bed-2.jpg" alt="Kitten Image">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-80 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <p class="text-white text-lg font-bold">Full Bed Setup</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="flex items-center justify-center">
+        <div class="relative h-64 overflow-hidden shadow-2xl w-full p-4">
+          <img class="w-full h-full object-cover rounded" src="media/feature-1.jpg" alt="Kitten Image">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-80 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <p class="text-white text-lg font-bold">Full Bed Setup</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="flex items-center justify-center">
+        <div class="relative h-64 overflow-hidden shadow-2xl w-full p-4">
+          <img class="w-full h-full object-cover rounded" src="media/88.png" alt="Kitten Image">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-80 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <p class="text-white text-lg font-bold">Full Bed Setup</p>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!-- card 4 -->
+          <div class="flex items-center justify-center">
+            <div class="relative h-64 overflow-hidden shadow-2xl w-full p-4">
+              <img class="w-full h-full object-cover rounded" src="media/kitchen-1.jpg" alt="Kitten Image">
+              <div
+                class="absolute inset-0 bg-black bg-opacity-80 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <p class="text-white text-lg font-bold">Full Kitchen Setup</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+<!-- testimonial section -->
+<div class="container lg:px-40 py-12 lg:pt-40 mx-auto  p-4">
+  <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 ">
+<div class="flex items-center justify-between p-4">
+            <!-- Card 1 -->
+            <div class="swiper-slide border-black shadow-xl">
+              <div class="p-4">
+                  <div class="flex items-center mb-4">
+                      <img class="w-12 h-12 object-cover rounded-full mr-4" src="https://placekitten.com/100/100" alt="User Avatar">
+                      <div>
+                          <p class="text-gray-800 font-bold">John Doe</p>
+                          <p class="text-gray-600">CEO, XYZ Company</p>
+                      </div>
+                  </div>
+                  <p class="text-gray-700 leading-6 sm:text-justify">"Working with your company has been a fantastic experience. The quality of the product and the level of service exceeded our expectations. We look forward to future collaborations."</p>
+              </div>
+          </div>
+          </div>
+          <!-- Card  -->
+          <div class="flex items-center justify-between p-4">
+          <div class="swiper-slide shadow-xl">
+              <div class="">
+                  <div class="flex items-center mb-4">
+                      <img class="w-12 h-12 object-cover rounded-full mr-4" src="https://placekitten.com/100/100" alt="User Avatar">
+                      <div>
+                          <p class="text-gray-800 font-bold">John Doe</p>
+                          <p class="text-gray-600">CEO, XYZ Company</p>
+                      </div>
+                  </div>
+                  <p class="text-gray-700 leading-6 sm:text-justify">"Working with your company has been a fantastic experience. The quality of the product and the level of service exceeded our expectations. We look forward to future collaborations."</p>
+              </div>
+          </div>
+        </div>
+</div>
+</div>
+
+
+<!--contact us  -->
+<div class="container mx-auto p-4 lg:px-10 py-8 lg:py-20">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <div class="bg-white p-4">
+        <h2 class="text-xl font-bold mb-4 text-[#072541]">Map</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29206.487344723806!2d90.38983472266571!3d23.789746602655118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a0f70deb73%3A0x30c36498f90fe23!2sGulshan%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1702551525451!5m2!1sen!2sbd" width="" class="w-full" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="bg-white p-4">
+        <h2 class="text-xl text-[#072541] font-bold mb-4">Contact Form</h2>
+
+        <!-- Contact Form -->
+        <form action="#">
+            <div class="mb-4">
+                <input type="text" id="name" name="name" placeholder="Name" class="mt-1 p-2 w-full border rounded-md" />
+            </div>
+
+            <div class="mb-4">
+                <input type="email" id="email" name="email" placeholder="Email" class="mt-1 p-2 w-full border rounded-md" />
+            </div>
+
+            <div class="mb-4">
+                <textarea id="message" placeholder="Message" name="message" rows="4"
+                    class="mt-1 p-2 w-full border rounded-md"></textarea>
+            </div>
+
+            <button type="#" class="bg-[#ed7d31] font-bold w-full lg:w-full text-white p-2 rounded-md">
+                Submit
+            </button>
+        </form>
+    </div>
+</div>
+</div>
+
+
+<!-- footer section start -->
+<footer class="bg-[#17314b] text-white  py-12">
+
+<div class="container lg:px-10">
+  <div class="grid grid-cols-1  sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4  gap-8 p-4">
+
+    <!-- Contact Information -->
+    <div>
+        <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+        <p>123 Gulshan Street</p>
+        <p>Cityville, ABC 12345</p>
+        <p>Email: info@example.com</p>
+        <p>Phone: (+88) 01319307170</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+        <div class="flex space-x-4">
+            <a href="#" class="text-white hover:text-gray-400 ">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <i class="fa-brands fa-facebook text-xl "></i>
+                  <i class="fa-brands fa-youtube text-xl mx-3"></i>
+                  <i class="fa-brands fa-instagram text-xl mx-3"></i>
+                  <i class="fa-brands fa-twitter text-xl mx-3"></i>
+                </svg>
+            </a>
+            <a href="#" class="text-white hover:text-gray-400 ">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <!-- Add your social media icon here -->
+                </svg>
+            </a>
+            <!-- Add more social media icons as needed -->
+        </div>
+    </div>
+    <div>
+        <h4 class="text-lg font-semibold mb-4">Subscribe to Our Newsletter</h4>
+        <form action="#" method="" class="flex">
+            <input type="email" name="email" placeholder="Your email " class="p-2 border rounded-l-md w-full text-black">
+            <button type="submit" class="bg-[#ed7d31] text-black p-2 rounded-r-md">Subscribe</button>
+        </form>
+    </div>
+
+</div>
+<div class="text-center">
+  &copy; 2024 | Aminul Islam | all rights reserved
+</div>
+</div>
+
+</footer>
+
+<!-- footer section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 5000, // Autoplay delay in milliseconds
+    },
+});
+
+</script>
+
+
+
+
+
+
+
+
+<script src="index.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- JAVASCRIPT LINK -->
+
+
+
+
+
+
+</body>
+
+</html>
